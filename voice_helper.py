@@ -1,8 +1,8 @@
 import speech_recognition as sr
 
 def listen():
-    recognizer = sr.Recognizer()
-    with sr.Microphone(device_index=2) as source:  # Using index 2 for Boult Audio Airbass
+    recognizer = sr.Recognizer() 
+    with sr.Microphone(device_index=2) as source:  # Using index 2 for Boult Audio Airbass dvsd
         print("Listening...")
         recognizer.adjust_for_ambient_noise(source)
         try:
